@@ -1,18 +1,18 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-import { getCollection } from 'astro:content';
+import { getCollection, render } from 'astro:content';
 import { Mail, Globe, Twitter, GraduationCap, ArrowLeft, Linkedin, Github } from 'lucide-react';
 
 export async function getStaticPaths() {
   const teamMembers = await getCollection('team');
   return teamMembers.map(member => ({
-    params: { slug: member.slug },
+    params: { slug: member.id.replace(/\.[^/.]+$/, "") },
     props: { member },
   }));
 }
 
 const { member } = Astro.props;
-const { Content } = await member.render();
+const { Content } = await render(member);
 const { name, role, title, avatar, email, website, linkedin, github, twitter, googleScholar } = member.data;
 
 const roleToKey = {

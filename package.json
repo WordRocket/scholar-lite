@@ -23,6 +23,9 @@
     "publication-list",
     "tailwindcss"
   ],
+  "engines": {
+    "node": ">=22.12.0"
+  },
   "scripts": {
     "dev": "astro dev",
     "build": "npm run import-bibtex && astro build && pagefind --site dist",

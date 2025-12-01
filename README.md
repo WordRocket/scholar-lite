@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![Astro](https://img.shields.io/badge/Astro_v5-BC52EE?style=for-the-badge&logo=astro&logoColor=white)
+![Astro](https://img.shields.io/badge/Astro_v6-BC52EE?style=for-the-badge&logo=astro&logoColor=white)
 ![TailwindCSS](https://img.shields.io/badge/Tailwind_v4-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.0-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
 ![Pagefind](https://img.shields.io/badge/Pagefind-Search-FF0000?style=for-the-badge&logo=algolia&logoColor=white)
@@ -67,7 +67,7 @@
 ## 🚀 Why Scholar-Lite?
 
 ### ⚡ Unmatched Performance
-*   **Zero JS by Default**: Built on **Astro v5**, sending **0kb** of JavaScript to the client for content pages.
+*   **Zero JS by Default**: Built on **Astro v6**, sending **0kb** of JavaScript to the client for content pages.
 *   **100/100 Lighthouse**: Optimized out-of-the-box for Performance, Accessibility, Best Practices, and SEO.
 *   **Tailwind CSS v4**: The latest utility-first CSS framework for rapid, modern styling.
 
@@ -90,7 +90,7 @@
 ## 🛠️ Quick Start
 
 ### Prerequisites
-*   Node.js v18.14.1 or higher
+*   Node.js v22.12.0 or higher
 
 ### 1. Installation
 ```bash

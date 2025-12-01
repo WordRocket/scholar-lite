@@ -1,18 +1,18 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-import { getCollection } from 'astro:content';
+import { getCollection, render } from 'astro:content';
 import { Calendar, ArrowLeft } from 'lucide-react';
 
 export async function getStaticPaths() {
   const activities = await getCollection('activities');
   return activities.map(activity => ({
-    params: { slug: activity.slug },
+    params: { slug: activity.id.replace(/\.[^/.]+$/, "") },
     props: { activity },
   }));
 }
 
 const { activity } = Astro.props;
-const { Content } = await activity.render();
+const { Content } = await render(activity);
 ---
 
 <Layout title={activity.data.title}>

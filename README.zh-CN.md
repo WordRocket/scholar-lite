@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![Astro](https://img.shields.io/badge/Astro_v5-BC52EE?style=for-the-badge&logo=astro&logoColor=white)
+![Astro](https://img.shields.io/badge/Astro_v6-BC52EE?style=for-the-badge&logo=astro&logoColor=white)
 ![TailwindCSS](https://img.shields.io/badge/Tailwind_v4-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.0-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
 ![Pagefind](https://img.shields.io/badge/Pagefind-Search-FF0000?style=for-the-badge&logo=algolia&logoColor=white)
@@ -67,7 +67,7 @@
 ## 🚀 为什么选择 Scholar-Lite？
 
 ### ⚡ 极致性能
-*   **默认零 JS (Zero JS)**：基于 **Astro v5** 构建，内容页面向客户端发送 **0kb** JavaScript，实现秒级加载。
+*   **默认零 JS (Zero JS)**：基于 **Astro v6** 构建，内容页面向客户端发送 **0kb** JavaScript，实现秒级加载。
 *   **Lighthouse 满分**：开箱即用的性能、可访问性、SEO 优化，均达到 Google Lighthouse 100/100 评分。
 *   **Tailwind CSS v4**：采用最新的原子化 CSS 框架，样式开发从未如此高效。
 
@@ -90,7 +90,7 @@
 ## 🛠️ 快速开始
 
 ### 环境要求
-*   Node.js v18.14.1 或更高版本
+*   Node.js v22.12.0 或更高版本
 
 ### 1. 安装
 ```bash

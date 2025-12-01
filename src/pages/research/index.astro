@@ -36,7 +36,7 @@ const researchAreas = (await getCollection('research')).sort((a, b) => a.data.or
               {area.data.description}
             </p>
             <a 
-              href={`/research/${area.slug}`} 
+              href={`/research/${area.id.replace(/\.[^/.]+$/, "")}`} 
               class="inline-flex items-center text-sm font-medium text-blue-600 hover:text-blue-700"
             >
               <span data-i18n-key="research.learnMore">Learn more</span> <ArrowRight className="ml-1 w-4 h-4" />

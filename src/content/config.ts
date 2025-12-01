@@ -1,7 +1,8 @@
 import { defineCollection, z } from 'astro:content';
+import { glob } from 'astro/loaders';
 
 const publications = defineCollection({
-  type: 'content',
+  loader: glob({ pattern: "**/*.{md,mdx}", base: "./src/content/publications" }),
   schema: ({ image }) => z.object({
     title: z.string(),
     authors: z.array(z.string()),
@@ -28,7 +29,7 @@ const publications = defineCollection({
 });
 
 const team = defineCollection({
-  type: 'content',
+  loader: glob({ pattern: "**/*.{md,mdx}", base: "./src/content/team" }),
   schema: ({ image }) => z.object({
     name: z.string(),
     role: z.enum([
@@ -57,7 +58,7 @@ const team = defineCollection({
 });
 
 const news = defineCollection({
-  type: 'content',
+  loader: glob({ pattern: "**/*.{md,mdx}", base: "./src/content/news" }),
   schema: z.object({
     title: z.string(),
     date: z.date(),
@@ -66,7 +67,7 @@ const news = defineCollection({
 });
 
 const research = defineCollection({
-  type: 'content',
+  loader: glob({ pattern: "**/*.{md,mdx}", base: "./src/content/research" }),
   schema: ({ image }) => z.object({
     title: z.string(),
     description: z.string(),
@@ -76,7 +77,7 @@ const research = defineCollection({
 });
 
 const patents = defineCollection({
-  type: 'content',
+  loader: glob({ pattern: "**/*.{md,mdx}", base: "./src/content/patents" }),
   schema: z.object({
     title: z.string(),
     inventors: z.array(z.string()),
@@ -88,7 +89,7 @@ const patents = defineCollection({
 });
 
 const softwares = defineCollection({
-  type: 'content',
+  loader: glob({ pattern: "**/*.{md,mdx}", base: "./src/content/softwares" }),
   schema: z.object({
     title: z.string(),
     developers: z.array(z.string()),
@@ -99,7 +100,7 @@ const softwares = defineCollection({
 });
 
 const honors = defineCollection({
-  type: 'content',
+  loader: glob({ pattern: "**/*.{md,mdx}", base: "./src/content/honors" }),
   schema: z.object({
     title: z.string(),
     award: z.string(), // e.g., "Gold Medal", "First Prize"
@@ -112,7 +113,7 @@ const honors = defineCollection({
 });
 
 const activities = defineCollection({
-  type: 'content',
+  loader: glob({ pattern: "**/*.{md,mdx}", base: "./src/content/activities" }),
   schema: ({ image }) => z.object({
     title: z.string(),
     date: z.date(),
